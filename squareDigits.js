@@ -1,4 +1,5 @@
 function squareDigits(num) {
-	var splitNums = num.split('');
-	console.log(splitNums);
+	return num.split('').map(function(el) {
+		return (+el * +el);
+	}).join('');
 }
