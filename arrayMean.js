@@ -1,3 +1,6 @@
+//Find mean for a given array
+
+
 var findAverage = function (nums) {
 	var i;
 	var sum = 0;
