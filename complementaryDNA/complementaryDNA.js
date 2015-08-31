@@ -5,7 +5,14 @@ function DNAStrand(dna){
 	var splitDNA = dna.split('');
 	//iterate over chars
 	console.log(splitDNA);
-	for (var i = 0; i < splitDNA.length; i++) {
+	splitDNA.replace('A', 'T');
+	splitDNA.replace('C', 'G');
+	splitDNA.replace('T', 'A');
+	splitDNA.replace('G', 'C');
+	
+	return splitDNA.join('');
+	
+/*	for (var i = 0; i < splitDNA.length; i++) {
 		//return complementary chars for each provided char
 		if (splitDNA[i] === 'A') {
 			return 'T';
@@ -16,7 +23,6 @@ function DNAStrand(dna){
 		} else if (splitDNA[i] === 'G') {
 			return 'C';
 		}
-	}
+	} */
 	//join chars back into full complementary dna strand
-  console.log(splitDNA.join(''));
 }
